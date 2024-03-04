@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <title>Formulir</title>
+    </head>
+
+    <body>  
+        <div>
+            <h1 id="titulo">Form Registrasi</h1>
+            <p id="subtitulo">Formulir Ini untuk login ke akun</p>
+            <br>
+        </div>
+        <form>
+
+            <fieldset class="grup">
+                <div class="bidang">
+                    <label for="nome"><strong>Nama Depan</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="bidang">
+                    <label for="Nama Belakang"><strong>Nama Belakang</strong></label>
+                    <input type="text" name="nama belakang" id="nama belakang" required>
+                </div>
+            </fieldset> 
+            <div class="bidang">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="bidang">
+                <label><strong>Bagian Mana Kamu Bekerja?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+            </div>
+            <div class="bidang">
+                <label for="senioridade"><strong>Tingkat</strong></label>
+                <select id="senioridade" required>
+                  <option selected disabled value="">Pilih</option>
+                  <option>Pemula</option>
+                  <option>Sedang</option>
+                  <option>Sepuh</option>
+                  <option>Sepuh Inti Bumi</option>
+                </select>
+            </div>
+
+            <fieldset class="grup">
+                <div id="check">
+                    <label><strong>Pilih Jenis Teknologi Yang Kamu Kuasai</strong></label><br><br>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                    <label for="tecnologia1"> HTML</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                    <label for="tecnologia2"> CSS</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                    <label for="tecnologia3"> JavaScript</label>
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                    <label for="tecnologia4"> PHP</label>
+                    <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                    <label for="tecnologia5"> C#</label>
+                    <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                    <label for="tecnologia6"> Python</label>
+                    <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                    <label for="tecnologia7"> Java</label>
+                </div>
+            </fieldset>
+            <div class="bidang">
+                <br>
+                <label for="experiencia"><strong>Tulis Kesan dan Pesanmu di Sini: </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+            </div>
+            <button class="botao" type="submit" onsubmit="">Send</button>            
+
+        </form>
+
+    </body>
+
+</html>
+
+
+
+
